@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-Medium.ttf');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: system-ui,sans-serif
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    overflow-y: scroll;
+    line-height: 1
+}
+
+.welcome {
+    line-height: 50%;
+}
+
+.profilepic {
+    float: left;
+    padding-right: 1cm;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
+
+
+nav ul a {
+    text-decoration: none;
+}
+
+
+ol,
+ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+* {
+    box-sizing: border-box
+}
+
+p code.highlighter-rouge,
+ul code.highlighter-rouge,
+ol code.highlighter-rouge {
+    color: white;
+    font-family: monospace;
+    border-bottom: 1px dotted white
+}
+
+html {
+    background: #ffffff
+}
+
+::selection {
+    background-color: orangered
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    font-family: system-ui,sans-serif;
+    font-display: swap;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: calc(60ch + 200px);
+    padding: 0;
+    margin: 0 auto
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    margin: 0 0 2rem 0;
+
+}
+
+hr {
+    background: rgba(66, 66, 66, 0.2);
+    border: 0;
+    height: 2px;
+    margin: 2rem 0
+}
+
+small {
+    font-size: 60%
+}
+
+div.note {
+    text-align: right;
+  }
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+i {
+    font-style: italic
+}
+
+b,
+strong {
+    font-weight: 900
+}
+
+ul,
+ol {
+    margin: 0 0 2rem;
+    padding-left: 2rem;
+
+}
+
+nav ul li,
+nav ol li {
+    font-weight: 900;
+    margin-bottom: 0.5rem
+}
+
+ul li,
+ol li {
+    margin-bottom: 0.5rem
+}
+
+ul li ul li,
+ol li ul li {
+    font-weight: 400
+}
+
+ul {
+    list-style: square
+}
+
+ul ul {
+    list-style: circle
+}
+
+ol {
+    list-style: decimal
+}
+
+a,
+a:visited {
+    color: rgb(0, 0, 0)
+}
+
+a:hover,
+a:visited:hover {
+    color: rgb(0, 0, 0);
+}
+
+figure {
+    display: block;
+    margin: 0 auto 4rem;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+figure img {
+    margin: 0 auto
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 0 2rem 0;
+    text-align: left;
+    width: 100%
+}
+
+table thead {
+    font-weight: 800
+}
+
+table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+table tr th,
+table tr td {
+    padding: 1rem
+}
+
+.date-time {
+    display: block
+}
+
+time {
+    display: inline-block;
+    margin-top: 1rem;
+    opacity: 0.5
+}
+
+sup {
+    font-size: 60%;
+    vertical-align: top
+}
+
+nav {
+    padding-top: 4rem;
+    width: 200px
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed
+}
+
+nav ul li {
+    line-height: 1;
+    margin: 1rem 0
+}
+
+nav ul li:last-child {
+    margin-bottom: 0
+}
+
+main {
+    width: calc(100% - 200px)
+}
+
+.boxed {
+    border: 5px solid black;
+    padding: 8px
+  } 
+
+.dashedbox {
+    display: grid;
+    border: 5px dashed black;
+    padding: 8px;
+    align-content: center
+  } 
+
+
+div.right {
+    text-align: right;
+}
+
+.post,
+.page {
+    margin-bottom: 10rem
+}
+
+.post h1,
+.page h1 {
+    font-size: 73px;
+    margin: 2.7rem 0 2rem;
+    position: relative
+}
+
+.post h2,
+.page h2 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    margin-top: 4rem
+}
+
+.post h3,
+.page h3 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    margin-top: 4rem
+}
+
+.post .post-footer,
+.page .post-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding-top: 4rem
+}
+
+figure figcaption {
+    font-size: 1rem;
+}
+
+@media (max-width: 2800px) {
+    body {
+        flex-direction: column
+    }
+    nav,
+    main {
+        padding: 1rem
+    }
+    nav {
+        width: 100%
+    }
+    nav ul {
+        position: relative
+    }
+    nav ul li {
+        display: inline-block;
+        margin-right: 0.8rem
+    }
+    main {
+        width: 100%
+    }
+    figure figcaption,
+    figure {
+        right: 0
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 18px
+    }
+    .date-time {
+        text-align: left
+    }
+    .home-page p {
+        font-size: 40px
+    }
+    .post h1,
+    .page h1 {
+        font-size: 40px;
+        margin: 1rem 0
+    }
+    .post h2,
+    .page h2 {
+        font-size: 30px
+    }
+    .post .post-footer,
+    .page .post-footer {
+        flex-direction: column;
+        text-align: center
+    }
+}
+
+/* Kontakt billede text ↓ targets the intermediary wrapper */
+.with-sidebar > * {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+  }
+  
+  .with-sidebar > * > * {
+    /* ↓ applies to both elements */
+    margin: 0.5rem;
+  }
+  
+  .sidebar {
+    flex-basis: 20rem;
+    flex-grow: 1;
+  }
+  
+  .not-sidebar {
+    /* ↓ grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: calc(50% - 1rem)
+  }

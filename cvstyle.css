@@ -1,0 +1,218 @@
+body {
+  background: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+a {
+  color: #000;
+  font-weight: 550;
+}
+
+a:hover {
+  color: red;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.name {
+  border-bottom: 5px solid #000;
+  padding: 2rem 1rem;
+}
+
+.name__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+.introduction {
+  border-bottom: 5px solid #000;
+  padding: 1rem;
+}
+
+.introduction__social-links {
+  padding: 0 1rem 1rem 0;
+}
+
+.introduction__link {
+  padding: 0 1rem 0 0;
+}
+
+.contact-information {
+  /* border-bottom: 1.5rem solid #b2cf3d; */
+  border-bottom: 5px solid #000;
+  padding: 1rem;
+}
+
+.skills {
+  border-bottom: 5px solid #000;
+  padding: 1rem;
+}
+
+.skills__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education {
+  border-bottom: 5px solid #000;
+  padding: 1rem;
+}
+
+.institution {
+  padding-bottom: 1rem;
+}
+
+.institution__degree,
+.institution__name,
+.institution__location,
+.institution__duration {
+  margin: 0;
+}
+
+.experience {
+  padding: 1rem;
+  border-bottom: 5px solid #000;
+}
+
+.job {
+  margin-bottom: 1rem;
+}
+
+.job__position {
+  margin: 0;
+}
+
+.job__employer {
+  margin: .25rem 0 .5rem;
+  font-weight: bold;
+}
+
+.job__description {
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+}
+
+.job__duties {
+  margin: 0;
+}
+
+.job__duty {
+  font-size: 1em;
+}
+
+.footer__text {
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.footer__link {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 840px) {  /* when this media screen 8 lines is there then pupperteer can't print the grid. */
+  body:before {
+    content: 'Sorry, it seems your browser doesn\'t support display: grid. Below is the fallback.';
+    display: block;
+    padding: 2rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+@supports (display: grid) {
+  body:before {
+    display: none;
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    /* grid-template-rows: auto auto 50% 50%; */
+    grid-template-areas: "name name name""contact intro intro""skills experience experience""education experience experience";
+  }
+
+  .name {
+    grid-area: name;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .name__heading {
+    font-size: 65px;
+  }
+
+  .introduction {
+    grid-area: intro;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .contact-information {
+  grid-area: contact;
+  border-right: 5px solid #000;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
+  }
+} 
+/* support grid end */
+
+/*   .skills {
+  grid-area: skills;
+  border-right: 5px solid #000;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
+}
+ */
+
+.contact-information__heading {
+  grid-area: contact-heading;
+}
+
+.contact-information__phone {
+  /* grid-area: contact-phone; */
+  grid-area: "contact-info";
+}
+
+.contact-information__email {
+  grid-area: "contact-info";
+  /* grid-area: contact-email; */
+}
+
+/* .contact-information__website {
+  grid-area: "contact-info";
+  grid-area: contact-website;
+} */
+
+.contact-information__location {
+  /* grid-area: contact-location; */
+  grid-area: "contact-info";
+}
+
+.skills {
+  grid-area: skills;
+  border-right: 5px solid #000;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
+}
+
+.education {
+  grid-area: education;
+  border-right: 5px solid #000;
+  border-bottom: none;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
+}
+
+.experience {
+  grid-area: experience;
+  /* border-bottom: 2rem solid #fff; */
+  border-bottom: none;
+  padding: 0 2rem 0 2rem;
+}
+}

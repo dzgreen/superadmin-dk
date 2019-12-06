@@ -104,9 +104,11 @@ body {
     line-height: 1
 }
 
-.welcome {
-    line-height: 50%;
+.center {
+    text-align: center;
 }
+
+
 
 .profilepic {
     float: left;

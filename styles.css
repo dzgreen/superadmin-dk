@@ -375,6 +375,30 @@ figure figcaption {
     font-size: 1rem;
 }
 
+.with-sidebar > * {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+  }
+  
+  .with-sidebar > * > * {
+    /* ↓ applies to both elements */
+    margin: 0.5rem;
+  }
+  
+  .sidebar {
+    flex-basis: 20rem;
+    flex-grow: 1;
+  }
+  
+  .not-sidebar {
+    /* ↓ grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: calc(50% - 1rem)
+  }
+
+
 @media (max-width: 2800px) {
     body {
         flex-direction: column
